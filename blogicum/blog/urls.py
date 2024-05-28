@@ -22,7 +22,7 @@ urlpatterns = [
     path('category/<slug:category_slug>/',
          views.CategoryPostsView.as_view(), name='category_posts'),
     path('profile/<str:username>/',
-         views.profile_page, name='profile'),
+         views.ProfilePageView.as_view(), name='profile'),
     path('edit_profile/',
          views.ProfileUpdateView.as_view(), name='edit_profile'),
     path('',
